@@ -1,0 +1,28 @@
+<html lang=en>
+    <head>
+
+    </head>
+    <body>
+        <div class="Header">
+            <h2>Yu-Gi-Pro!</h2>
+            <button>
+                <a href="{% url 'index' %}">Search Again</a>
+            </button>
+        </div>
+        <div class="results">
+            <h1>
+                Search Results
+            </h1>
+            <ul>
+                {% for card in cards %}
+                <div class='card'>
+                    <ul>
+                        <li>
+                            Card Id: 
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </body>
+</html>
